@@ -11,7 +11,7 @@ return {
       {
         name = "Notes",
         path = "~/Obsidian/Knowledge",
-        strict = true,
+        strict = false,
       },
     },
     ui = { enable = false },
