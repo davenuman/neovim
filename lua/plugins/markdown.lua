@@ -9,4 +9,6 @@ return {
     ---@type render.md.UserConfig
     opts = {},
   },
+  -- add Vivify for markdown Markdown Previews
+  { "jannis-baum/vivify.vim" },
 }
