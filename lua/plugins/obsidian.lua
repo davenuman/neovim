@@ -85,6 +85,7 @@ return {
   vim.keymap.set("n", "<leader>nd", ":ObsidianDailies<CR>", { desc = "Daily Notes" }),
   vim.keymap.set("n", "<leader>nn", ":ObsidianNew", { desc = "Obsidian New" }),
   vim.keymap.set("n", "<leader>no", ":ObsidianOpen<CR>", { desc = "Open in Obsidian" }),
+  vim.keymap.set("n", "<leader>nq", ":ObsidianQuickSwitch<CR>", { desc = "Obsidian Quick Switch" }),
   vim.keymap.set("n", "<leader>ns", ":ObsidianSearch<CR>", { desc = "Obsidian Search" }),
   vim.keymap.set("n", "<leader>nt", ":ObsidianTags<CR>", { desc = "Obsidian Tags" }),
   vim.keymap.set("n", "<leader>ngs", ":ObsidianFollowLink hsplit<CR>", { desc = "Follow Link split" }),
