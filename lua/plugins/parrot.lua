@@ -1,3 +1,7 @@
+if true then
+  return {}
+end
+
 return {
   "frankroeder/parrot.nvim",
   dependencies = { "ibhagwan/fzf-lua", "nvim-lua/plenary.nvim", "rcarriga/nvim-notify" },
