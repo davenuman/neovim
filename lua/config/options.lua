@@ -6,6 +6,14 @@
 -- Set to "intelephense" to use intelephense instead of phpactor.
 vim.g.lazyvim_php_lsp = "intelephense"
 
+-- ── Team defaults ──────────────────────────────────────────
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
+vim.opt.textwidth = 160
+vim.opt.wrap = false
+
 -- Settings for neovide.
 if vim.g.neovide then
   vim.g.neovide_scroll_animation_length = 0
