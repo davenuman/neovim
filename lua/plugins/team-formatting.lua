@@ -7,15 +7,15 @@ return {
 
   -- ── Mason: tool installer ───────────────────────────────────
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     build = ":MasonUpdate",
     opts = {},
   },
 
   -- Bridges mason-installed servers into lspconfig automatically
   {
-    "williamboman/mason-lspconfig.nvim",
-    dependencies = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
+    "mason-org/mason-lspconfig.nvim",
+    dependencies = { "mason-org/mason.nvim", "neovim/nvim-lspconfig" },
     opts = {
       ensure_installed = {
         "ts_ls", -- JS / TS
@@ -29,7 +29,7 @@ return {
   -- Bridges mason-installed tools into conform / nvim-lint
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
-    dependencies = { "williamboman/mason.nvim" },
+    dependencies = { "mason-org/mason.nvim" },
     opts = {
       ensure_installed = {
         "prettier", -- JS, TS, HTML formatter
@@ -41,7 +41,7 @@ return {
   -- ── LSP ─────────────────────────────────────────────────────
   {
     "neovim/nvim-lspconfig",
-    dependencies = { "williamboman/mason-lspconfig.nvim" },
+    dependencies = { "mason-org/mason-lspconfig.nvim" },
     config = function()
       local lsp = require("lspconfig")
 
